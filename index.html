@@ -1,35 +1,37 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta />
-        <!-- Кодировка -->
-        <meta />
-        <!-- Описание -->
+        <meta charset="UTF-8" />
+        <meta name="description" content="Описание страницы" />
         <title>Разгадай код</title>
     </head>
     <body>
         <h1>Исправьте атрибуты в коде</h1>
 
-        <a>Нажми на меня</a>
+        <a href="https://example.com" title="Пример страницы">Нажми на меня</a>
 
-        <img />
+        <img src="image.jpg" alt="Описание изображения" height="400" width="300" />
 
-        <form>
-            <input />
-            <button>Отправить</button>
+        <form action="submit.php" method="POST">
+            <input type="text" name="username" placeholder="Введите имя" />
+            <button type="submit">Отправить</button>
         </form>
 
-        <video></video>
+        <video width="600" height="400" controls loop>
+            <source src="video.mp4" type="video/mp4">
+        </video>
 
-        <audio></audio>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
 
-        <table>
+        <table cellspacing="5" cellpadding="5" border="1">
             <tr>
                 <td>Ячейка 1</td>
                 <td>Ячейка 2</td>
             </tr>
         </table>
 
-        <iframe></iframe>
+        <iframe src="https://example.com" width="600" height="400" title="Описание iframe"></iframe>
     </body>
 </html>
